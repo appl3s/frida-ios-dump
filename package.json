@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "prepare": "npm run build",
-    "build": "frida-compile dump.ts -o dist/dump.js"
+    "build": "mkdir -p dist && frida-compile dump.ts -o dist/dump.js"
   },
   "devDependencies": {
     "@types/frida-gum": "^19.0.0",
